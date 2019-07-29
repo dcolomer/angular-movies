@@ -1,0 +1,18 @@
+<h1 class="animated fadeIn">{{ pelicula.titulo | uppercase }} <small>({{ pelicula.anio }})</small></h1>
+<hr>
+
+<div class="row animated fadeIn fast">
+  <div class="col-md-4">
+    <img [src]="pelicula.img" class="img-fluid" [alt]="pelicula.titulo">
+    <br><br>
+    <!--<a [routerLink]="['/peliculas']" class="btn btn-outline-danger btn-block">Regresar</a>-->
+    <button (click)="volver()" class="btn btn-outline-danger btn-block">Regresar</button>
+  </div>
+  <div class="col-md-8">
+    <h3>{{ pelicula.titulo }}</h3>
+    <hr>
+    <p>{{ pelicula.sinopsis }}</p>
+    <hr>
+    <p>{{ pelicula.direccion}}</p>
+  </div>
+</div>

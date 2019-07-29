@@ -1,0 +1,17 @@
+<div class="card animated fadeIn fast">
+  <img class="card-img-top" [src]="pelicula.img" [alt]="pelicula.titulo">
+  <div class="card-body">
+    <h4 class="card-title">{{ pelicula.titulo }}</h4>
+    <p class="card-text">{{ pelicula.sinopsis | smartTruncate: 100 }}</p>
+    <p class="card-text">{{ pelicula.direccion }}</p>
+    <p class="card-text">
+      <small class="text-muted">{{ pelicula.anio }}</small>
+    </p>
+    <!--<a [routerLink]="['/peliculas', pelicula.id]" class="btn btn-outline-primary btn-block">
+      Ver más...
+    </a>-->
+    <button (click)="emitirId()" type="button" class="btn btn-outline-primary btn-block">
+      Ver más...
+    </button>
+  </div>
+</div>
