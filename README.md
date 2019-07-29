@@ -1,23 +1,34 @@
 # Movies
+> ### Aplicación en Angular v8.
 
-Esta es una aplicación en Angular v8.
+### Acceso a la aplicación
+Se accede a la aplicación mediante la URL http://localhost:4200/ 
 
-Toca en mayor o menor medida los siguientes aspectos:
+## Capturas de pantalla
+A continuación se muestra visualmente las principales funcionalidades de la aplicación.
+
+### Detalle de una película
+Mediante el menú `peliculas` vemos el catálogo de películas disponibles
+ 
+![Peliculas](https://github.com/dcolomer/movies-angularl/blob/master/screenshots/1.png)
+
+### Detalle de una película
+Al pulsar sobre el botón `Ver más` de una película, accedemos a la ficha de la misma, donde podemos toda la sinópsis.
+
+![Ficha](https://github.com/dcolomer/movies-angularl/blob/master/screenshots/2.png)
+
+### Buscar/Filtrar películas
+La barra de navegación tiene una caja de texto para que podamos consultar las películas que cumplan con el criterio de búsqueda.
+
+![Filtro](https://github.com/dcolomer/movies-angularl/blob/master/screenshots/3.png)
+
+Características de Angular:
 - Gestión de rutas y parámetros
-- Uso de HttpClient para obtener información del backed
-- Uso de la API de Spotify para obtener información de:
-    - Artistas
-    - Albumes
-    - Audio
-- Gestión de datos asíncronos. Observables y promesas
-- Widgets de Spotify
-- HTML5 audio
+- Compartir información entre componentes mediante @Input() y @Output()
+- Uso de servicios para cargar ficheros de datos y compartirlos entre componentes
+- Gestión de datos asíncronos. Observables
 - Pipes personalizados
-- Gestión de token de acceso
-- LocalStorage
-- Bootstrap 4: cards, badges, tables, navbar
+- Bootstrap 4: cards, navbar
 
 ## Instalación
 Ejecutar `mpm install` para descargar las librerías de node.
-
-Importante: El programa no proporciona las credenciales que permiten conseguir un token de acceso al API de Spotify. Por tanto, será necesario registrarse en Spotify, obtener el `client id` y el `client secret` y pegarlos en el método `getToken` de `TokenService`.
